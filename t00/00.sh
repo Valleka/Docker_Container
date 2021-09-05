@@ -1,0 +1,1 @@
+docker container run -it -v $PWD:/scripts --name testapp ubuntu /bin/bash /scripts/01.sh

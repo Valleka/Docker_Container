@@ -1,0 +1,16 @@
+version: "3"
+services:
+  ha_balancer:
+    image: haproxy
+    ports:
+      - "8080:80"
+    networks:
+      default:
+        ipv4_address: 172.25.0.9
+
+networks:
+  default:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.25.0.0/24

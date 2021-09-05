@@ -1,0 +1,1 @@
+docker ps -q --filter "name=testapp" | grep -q . && docker stop testapp && docker rm -fv testapp

@@ -1,0 +1,1 @@
+docker network create t07_default --subnet=172.25.0.0/24

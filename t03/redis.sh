@@ -1,0 +1,1 @@
+docker search --no-trunc redis > redisSearch.sh
